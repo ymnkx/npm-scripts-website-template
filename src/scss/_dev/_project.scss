@@ -1,0 +1,17 @@
+@mixin large-number {
+  font-size: 15rem;
+  line-height: 1;
+  font-weight: 200;
+  @include min-screen(md) {
+    font-size: 20rem;
+  }
+}
+
+@mixin component-name {
+  font-size: 2rem;
+  line-height: 1;
+  font-weight: 200;
+  @include min-screen(md) {
+    font-size: 2.25rem;
+  }
+}

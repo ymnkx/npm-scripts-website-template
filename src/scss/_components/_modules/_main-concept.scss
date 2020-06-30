@@ -1,0 +1,25 @@
+.main-concept {
+  padding: 4rem 1rem;
+  border-bottom: 1px solid $color-black;
+  &.-center {
+    text-align: center;
+  }
+  @include min-screen(md) {
+    padding: 6rem 1rem;
+  }
+}
+
+.main-concept_inner {
+  max-width: $max-width-lg;
+  margin: 0 auto;
+  position: relative;
+  @include side-deco;
+}
+
+.main-concept_title {
+  @include large-number;
+}
+
+// .main-concept_description {
+//   padding: 2rem 0;
+// }

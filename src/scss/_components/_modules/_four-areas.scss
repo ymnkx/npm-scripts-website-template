@@ -1,0 +1,41 @@
+.four-areas {
+  border-bottom: 1px solid $color-black;
+  padding: 4rem 1rem;
+  @include min-screen(md) {
+    padding: 6rem 1rem;
+  }
+}
+
+.four-areas_inner {
+  max-width: $max-width-lg;
+  margin: 0 auto;
+  position: relative;
+  @include side-deco;
+  @include min-screen(md) {
+    padding: 0 0.5rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+.four-areas_item {
+  text-align: center;
+  position: relative;
+  padding: 0 1rem;
+  max-width: 400px;
+  margin: 0 auto 2rem auto;
+  @include min-screen(md) {
+    padding: 0 0.5rem;
+    max-width: 100%;
+    margin: auto;
+    width: (100% / 2);
+  }
+  @include min-screen(lg) {
+    width: (100% / 4);
+  }
+}
+
+.four-areas_title {
+  @include large-number;
+}

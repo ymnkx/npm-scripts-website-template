@@ -1,0 +1,16 @@
+include ../_data/_pageList.pug
+
+header.common-header
+  .common-header_title HEADER
+  .global-menu
+    button.global-menu_btn#js-global-menu-btn
+      span
+      span
+      span
+    .global-menu_body#js-global-menu-body
+      .global-menu_inner
+        .global-menu_bg#js-global-menu-bg
+        ul.global-menu_linklist
+          each page in pageList
+            li.global-menu_item
+              a(href=page.url).global-menu_link= page.label

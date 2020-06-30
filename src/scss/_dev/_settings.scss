@@ -1,0 +1,40 @@
+$color-white: #f0f0f0;
+$color-gray-50: #e4e4e4;
+$color-gray-100: #ddd;
+$color-gray-200: #999;
+$color-gray-400: #666;
+$color-gray-800: #444;
+$color-black: #333;
+
+$color-primary: rgb(245, 132, 32);
+
+$font-size-base: 1rem !default;
+$font-size-sm: $font-size-base * 0.875 !default;
+$font-size-lg: $font-size-base * 1.25 !default;
+
+$font-weight-lighter: lighter !default;
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-bold: 700 !default;
+$font-weight-bolder: bolder !default;
+$font-weight-base: $font-weight-normal !default;
+
+$line-height-base: 1.5 !default;
+$line-height-sm: 1.25 !default;
+$line-height-lg: 2 !default;
+
+$h1-font-size: $font-size-base * 2.5 !default;
+$h2-font-size: $font-size-base * 2 !default;
+$h3-font-size: $font-size-base * 1.75 !default;
+$h4-font-size: $font-size-base * 1.5 !default;
+$h5-font-size: $font-size-base * 1.25 !default;
+$h6-font-size: $font-size-base !default;
+
+$z-global-menu-btn: 150;
+$z-global-menu: 100;
+$z-header: 10;
+
+$link-color: $color-primary !default;
+$link-decoration: underline !default;
+$link-hover-color: darken($link-color, 15%) !default;
+$link-hover-decoration: null !default;

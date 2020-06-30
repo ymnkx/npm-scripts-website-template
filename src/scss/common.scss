@@ -1,0 +1,41 @@
+@import "./_dev/**/*";
+@import "./_components/**/*";
+
+.test {
+  background-color: $color-gray-100;
+  display: flex;
+
+  .text {
+    font-size: 16px;
+    &:before {
+      content: "";
+    }
+  }
+}
+
+body {
+  background-color: $color-white;
+  margin: 0;
+  // color: $color-red;
+}
+
+.canvas {
+  position: fixed;
+  left: 0;
+  z-index: -1;
+  top: 0;
+}
+
+.flex {
+  color: $color-white;
+  display: flex;
+}
+
+.sample {
+  display: flex;
+  width: calc(100% - 20px);
+  &:after {
+    content: "";
+    border-bottom: 2px;
+  }
+}

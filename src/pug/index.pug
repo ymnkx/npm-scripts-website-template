@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+html(lang="ja")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Document
+    script(defer, src="/assets/js/index.js")
+    link(rel="stylesheet", href="/assets/css/common.css")
+  body
+    include ./_dev/_common-header.pug
+    main.common-main
+      .main-visual
+        .main-visual_inner
+          h1.main-visual_title#js-mv MV
+          .main-visual_description
+            p メインビジュアル
+            p Main Visual
+      .main-concept.-center
+        .main-concept_inner
+          h2.main-concept_title 1
+          .main-concept_description
+            p コンセプト
+            p Concept
+      .two-areas
+        .two-areas_inner
+          .two-areas_item
+            h2.two-areas_title 2
+          .two-areas_item
+            p ２つのエリア
+      .three-areas
+        .three-areas_inner
+          .three-areas_item
+            h2.three-areas_title 3
+          .three-areas_item
+            p THREE
+          .three-areas_item
+            p ３つのエリア
+      .four-areas
+        .four-areas_inner
+          .four-areas_item
+            .four-areas_itemImg.-noImage
+              h2.four-areas_title 4
+            .four-areas_itemContents
+          .four-areas_item
+            .four-areas_itemImg
+              img(src="/assets/img/sea_1.jpg", alt="SEA")
+          .four-areas_item
+            .four-areas_itemImg
+              img(src="/assets/img/sea_2.jpg", alt="SEA")
+          .four-areas_item
+            .four-areas_itemImg
+              img(src="/assets/img/sea_3.jpg", alt="SEA")
+    include ./_dev/_common-footer.pug

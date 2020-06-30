@@ -1,0 +1,110 @@
+$_btn-size: 44px;
+$_bar_w: 24px;
+$_bar_h: 2px;
+$_bar_span: 8px;
+
+.global-menu {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.global-menu_btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: $_btn-size;
+  width: 1em;
+  height: 1em;
+  background-color: transparent;
+  border: 0;
+  z-index: $z-global-menu-btn;
+  &:hover {
+    background-color: $color-gray-50;
+  }
+  &.-opened:hover {
+    background-color: $color-gray-800;
+  }
+  span {
+    position: absolute;
+    width: $_bar_w;
+    height: $_bar_h;
+    top: calc(50% - #{$_bar_h} / 2);
+    left: calc(50% - #{$_bar_w} / 2);
+    background-color: $color-black;
+    transform-origin: center center;
+    transition: transform 0.15s;
+    &:nth-child(1) {
+      top: calc(50% - #{$_bar_span + $_bar_h});
+    }
+    &:nth-child(3) {
+      top: calc(50% + #{$_bar_span});
+    }
+  }
+  &.-opened span {
+    background-color: $color-white;
+    &:nth-child(1) {
+      transform: translateY(#{$_bar_span + $_bar_h}) rotate(45deg);
+    }
+    &:nth-child(2) {
+      display: none;
+    }
+    &:nth-child(3) {
+      transform: translateY(-#{$_bar_span}) rotate(-45deg);
+    }
+  }
+}
+
+.global-menu_body {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  color: $color-white;
+  z-index: $z-global-menu;
+  display: none;
+  &.-opened {
+    display: block;
+  }
+}
+
+.global-menu_inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.global-menu_bg {
+  background-color: $color-black;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.global-menu_linklist {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.global-menu_item {
+  &:not(:first-child) {
+    margin-top: 1rem;
+  }
+}
+
+.global-menu_link {
+  color: $color-white;
+  font-size: 2rem;
+  text-decoration: none;
+  display: inline-block;
+  border-bottom: 2px solid transparent;
+  &:hover {
+    border-bottom: 2px solid $color-white;
+  }
+}

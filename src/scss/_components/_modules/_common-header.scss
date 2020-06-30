@@ -1,0 +1,16 @@
+.common-header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: $z-header;
+}
+
+.common-header_title {
+  @include component-name;
+  text-align: center;
+  margin-top: 14px;
+  @include min-screen(md) {
+    margin-top: 10px;
+  }
+}

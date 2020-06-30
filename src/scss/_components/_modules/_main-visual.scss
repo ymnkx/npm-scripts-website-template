@@ -1,0 +1,28 @@
+.main-visual {
+  background-color: $color-gray-100;
+  padding: 6rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include min-screen(md) {
+    padding: 12rem 1rem;
+  }
+}
+
+// .main-visual_inner {
+// }
+
+.main-visual_title {
+  font-size: 60vw;
+  font-weight: 200;
+  line-height: 1;
+  @include min-screen(md) {
+    font-size: 20rem;
+  }
+}
+
+.main-visual_description {
+  margin-top: 0.5em;
+  font-weight: 400;
+  padding-left: 1rem;
+}

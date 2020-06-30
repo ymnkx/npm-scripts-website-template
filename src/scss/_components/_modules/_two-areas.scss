@@ -1,0 +1,32 @@
+.two-areas {
+  border-bottom: 1px solid $color-black;
+  padding: 4rem 1rem;
+  @include min-screen(md) {
+    padding: 6rem 1rem;
+  }
+}
+
+.two-areas_inner {
+  max-width: $max-width-lg;
+  margin: 0 auto;
+  position: relative;
+  @include side-deco;
+  @include min-screen(md) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.two-areas_item {
+  position: relative;
+  text-align: center;
+  padding: 0 1rem;
+  @include min-screen(md) {
+    @include devide-deco;
+    width: 50%;
+  }
+}
+
+.two-areas_title {
+  @include large-number;
+}

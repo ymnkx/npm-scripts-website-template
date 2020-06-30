@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "strict": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+
+    "pretty": true,
+    "sourceMap": true,
+    "inlineSources": true,
+    "resolveJsonModule": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "lib": [
+      "dom",
+      "es6"
+    ],
+    // "noImplicitAny": false,
+    // "typeRoots" : ["node_modules/@types", "src/ts/@types"]
+  }
+}

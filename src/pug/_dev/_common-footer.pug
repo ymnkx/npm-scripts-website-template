@@ -1,0 +1,11 @@
+include ../_data/_pageList.pug
+
+footer.common-footer
+  .common-footer_inner
+    .common-footer_contents
+      .common-footer_title FOOTER
+      ul.common-footer_menu
+        each page in pageList
+            li
+              a(href=page.url).common-footer_link= page.label
+    .common-footer_copyrights &copy; 2020 Tomohiro Yamanaka

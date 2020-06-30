@@ -1,0 +1,32 @@
+.three-areas {
+  border-bottom: 1px solid $color-black;
+  padding: 4rem 1rem;
+  @include min-screen(md) {
+    padding: 6rem 1rem;
+  }
+}
+
+.three-areas_inner {
+  max-width: $max-width-lg;
+  margin: 0 auto;
+  position: relative;
+  @include side-deco;
+  @include min-screen(md) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.three-areas_item {
+  text-align: center;
+  position: relative;
+  padding: 0 1rem;
+  @include min-screen(md) {
+    @include devide-deco;
+    width: (100% / 3);
+  }
+}
+
+.three-areas_title {
+  @include large-number;
+}
