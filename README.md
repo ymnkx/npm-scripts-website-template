@@ -1,1 +1,1 @@
-# npm-scripts-static-web-template
+# npm-scripts-website-template
