@@ -23,16 +23,12 @@ $line-height-base: 1.5 !default;
 $line-height-sm: 1.25 !default;
 $line-height-lg: 2 !default;
 
-$h1-font-size: $font-size-base * 2.5 !default;
-$h2-font-size: $font-size-base * 2 !default;
-$h3-font-size: $font-size-base * 1.75 !default;
-$h4-font-size: $font-size-base * 1.5 !default;
-$h5-font-size: $font-size-base * 1.25 !default;
-$h6-font-size: $font-size-base !default;
-
-$z-global-menu-btn: 150;
-$z-global-menu: 100;
-$z-header: 10;
+$font-size-h1: $font-size-base * 2.5 !default;
+$font-size-h2: $font-size-base * 2 !default;
+$font-size-h3: $font-size-base * 1.75 !default;
+$font-size-h4: $font-size-base * 1.5 !default;
+$font-size-h5: $font-size-base * 1.25 !default;
+$font-size-h6: $font-size-base !default;
 
 $link-color: $color-primary !default;
 $link-decoration: underline !default;

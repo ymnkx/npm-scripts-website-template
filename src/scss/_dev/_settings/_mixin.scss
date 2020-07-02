@@ -1,0 +1,59 @@
+@mixin min-screen($b) {
+  @media screen and (min-width: map-get($breakpoints, $b)) {
+    @content;
+  }
+}
+
+@mixin max-screen($b) {
+  $limit: map-get($breakpoints, $b) - 0.02px;
+  @media screen and (max-width: $limit) {
+    @content;
+  }
+}
+
+@mixin side-deco {
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 20px;
+    background-color: $color-gray-400;
+    left: 0;
+    top: calc(50% - 10px);
+  }
+  &:after {
+    left: auto;
+    right: 0;
+  }
+}
+
+@mixin devide-deco {
+  &:not(:first-child):before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 20px;
+    background-color: $color-gray-400;
+    left: 0;
+    top: calc(50% - 10px);
+  }
+}
+
+@mixin large-number {
+  font-size: 15rem;
+  line-height: 1;
+  font-weight: 200;
+  @include min-screen(md) {
+    font-size: 20rem;
+  }
+}
+
+@mixin component-name {
+  font-size: 2rem;
+  line-height: 1;
+  font-weight: 200;
+  @include min-screen(md) {
+    font-size: 2.25rem;
+  }
+}
